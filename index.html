@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form action="index.php" method="post">
+      <div id="logo">
+        <img src="logo.png">
+      </div>
+      <table id="tabela">
+        <tr>
+          <td></td>
+          <td>Imię i nazwisko:</td>
+          <td><input name="imie" type="text"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Numer telefonu:</td>
+          <td>
+            <input name="telefon" type="tel" placeholder="___-___-___" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+            <p>Format: xxx-xxx-xxx</p>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Typ:</td>
+          <td>
+            <select name="typ">
+              <option value="laptop">Laptop</option>
+              <option value="komputer">Komputer</option>
+              <option value="inne">Inne</option>
+            </select>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Model urządzenia:</td>
+          <td><input name="model" type="text"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Wyposażenie:</td>
+          <td><input type="text" name="wyposazenie"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Objawy:</td>
+          <td><textarea rows="4" name="objawy"></textarea></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Uwagi:</td>
+          <td><textarea rows="4" name="uwagi"></textarea></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>
+            <button type="submit">Prześlij</button>
+            <button type="submit" formaction="search.php" formmethod="post" formtarget="_blank">Wyszukaj</button>
+          </td>
+          <td></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
